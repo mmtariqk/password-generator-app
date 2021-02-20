@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css stylesheet called style.css here-->
+	<link rel="stylesheet" href="./styles/style.css">
+    <title>Password Generator</title>
+	<link rel="canonical" href="#" >
+	<!-- Place your Font Awesome embed code  -->
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+		
+	
+ 
+</head>
+<body>
+   
+    
+<!-- INSERT HTML HERE -->
+<div class="container">
+	<h2>Random Password Generator</h2>
+	<div class="result-container">
+		<span id="result"></span>
+		<button class="btn" id="clipboard">
+			<i class="fas fa-clipboard">copy</i>
+		</button>
+	</div>
+	<div class="settings">
+		<div class="setting">
+			<label>Password length</label>
+			<!--Min password length 8 while max is 20 character-->
+			<input type="number" id="length" min='8' max='20' value='20' />
+		</div>
+		<div class="setting">
+			<label>Uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+		<div class="setting">
+			<label>Lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<label>Numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label>Symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generate password 
+	</button>
+</div>
+
+<!--Javascript main.js linked here-->
+<script src="./js/main.js"></script>
+
+</body>
+</html>
+
+
+
